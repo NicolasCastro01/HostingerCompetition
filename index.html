@@ -11,37 +11,62 @@
     </head>
 
     <body>
-        <header class="header">
-            <img class="header-image" src="./LogoComunidadeBallerini.svg" alt="Logo da comunidade Ballerini">
-            <nav class="header-menu">
-                <a class="header-menu-item" target="_blank" href="https://discord.gg/wagxzStdcR">Comunidade Ballerini</a>
-                <a class="header-menu-item" href="">Tutorial</a>
-                <a class="header-menu-item" href="">Open Source</a>
-                <a class="header-menu-item" href="">Comandos</a>
-            </nav>
-        </header>
 
-        <main class="content">
-            <section class="content-main">
-                <div class="content-main-text">
-                    <h1 class="content-main-text-title">Balle Bot</h1>
-                    <h2 class="content-main-text-subtitle">Deixe a sua comunidade segura de um jeito mais fácil</h2>
-                    <button class="content-main-text-button" onclick="window.location.href='https://github.com/rafaballerini/LandingPage'">Me adicione!</button>
+        
+
+        <div class="loadContent">
+
+            <div class="loadBox">
+                <h2 id="errorText" style="display: none;">Erro ao carregar a tela!</h2>
+                <div class="load"></div>
+                <button id="hostingerTry" class="btnHostinger" style="display: none;"><nobr>Tentar com o Hostinger</nobr></button>
+            </div>
+            
+            <header class="header">
+                <img class="header-image" src="./LogoComunidadeBallerini.svg" alt="Logo da comunidade Ballerini">
+                <img class="header-image-hostinger" src="./image_1-hostinger-e-bom-logo.jpg" alt="hostingerLogo">
+                <nav class="header-menu">
+                    <a class="header-menu-item" target="_blank" href="https://discord.gg/wagxzStdcR">Comunidade Ballerini</a>
+                    <a class="header-menu-item" href="">Tutorial</a>
+                    <a class="header-menu-item" href="">Open Source</a>
+                    <a class="header-menu-item" href="">Comandos</a>
+                </nav>
+            </header>
+    
+            <main class="content">
+                <section class="content-main">
+                    <div class="content-main-text">
+                        <h1 class="content-main-text-title">Balle Bot</h1>
+                        <h2 class="content-main-text-subtitle">Deixe a sua comunidade segura de um jeito mais fácil</h2>
+                        <button class="content-main-text-button" onclick="window.location.href='https://github.com/rafaballerini/LandingPage'">Me adicione!</button>
+                    </div>
+                    <img class="content-main-image" src="./ImgBotBallerini.svg" alt="Imagem do Bot da Ballerini">
+                </section>
+    
+                <section class="content-secondary">
+                    <h3 class="content-secondary-title">O que ela faz por você?</h3>
+                    <p class="content-secondary-paragraph">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
+                    <p class="content-secondary-paragraph">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
+                    <p class="content-secondary-paragraph">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
+                </section>
+            </main>
+    
+            <footer class="footer">
+                <img class="footer-image" src="BALLERINI.svg" alt="Logo principal da Ballerini 2021 - Reta final!">
+            </footer>
+
+            <div class="loadingSemHostinger">
+                <div class="menu">
+                    <ul class="menu-items">
+                        <li class="menu-item"><button class="btnHostinger" id="nohostinger"><i>Sem Hostinger<i></button></li>
+                        <li class="menu-item"><button class="btnHostinger" id="hostinger"><i>Com Hostinger</i></button></li>
+                    </ul> 
                 </div>
-                <img class="content-main-image" src="./ImgBotBallerini.svg" alt="Imagem do Bot da Ballerini">
-            </section>
+            </div>
 
-            <section class="content-secondary">
-                <h3 class="content-secondary-title">O que ela faz por você?</h3>
-                <p class="content-secondary-paragraph">1. Cria um <strong>sistema de verificação capcha</strong> para novos membros garantirem que não são robôs</p>
-                <p class="content-secondary-paragraph">2. Possui um <strong>sistema de banimento automático</strong> para links suspeitos que forem enviados na comunidade</p>
-                <p class="content-secondary-paragraph">3. <strong>Sistema de avisos e banimento manual</strong>, para pessoas administradoras utilizarem</p>
-            </section>
-        </main>
-
-        <footer class="footer">
-            <img class="footer-image" src="BALLERINI.svg" alt="Logo principal da Ballerini 2021 - Reta final!">
-        </footer>
+        </div>
+    
+        <script src="index.js"></script>
     </body>
 
 </html>
